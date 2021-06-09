@@ -1,0 +1,10 @@
+[general]
+name=Menu Radial
+email=me@example.com
+author=1cgeo
+qgisMinimumVersion=3.0
+description=Menu para executar ações de forma rápida.
+version=0.0.1
+#repository=https://github.com/1cgeo/Ferramentas_Producao
+#icon=icons/production.png
+; end of mandatory metadata
