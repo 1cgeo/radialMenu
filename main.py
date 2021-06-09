@@ -15,14 +15,19 @@ class Main:
         self.toolBar = self.iface.addToolBar('teste')
         self.radilaMenuAction = self.createAction(
             "Menu Radial", 
-            "restoreFields.png", 
+            os.path.join(
+                os.path.abspath(os.path.join(
+                    os.path.dirname(__file__)
+                )),
+                'icons',
+                'radialmenu.svg'
+            ), 
             self.showRadialMenu
         )
 
-    def createAction(self, text, icon, callback):
-        #iconPath = self.getPluginIconPath(icon)
+    def createAction(self, text, iconPath, callback):
         action = QtWidgets.QAction(
-             #QIcon(iconPath),
+            QtGui.QIcon(iconPath),
             text,
             self.iface.mainWindow()
         )
